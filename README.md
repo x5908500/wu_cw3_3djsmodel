@@ -1,4 +1,4 @@
-# 3js_model
+# 3js_model contribute by Woody Wu
 Make the threejs-scroll-animation-demo model changeable
 reference from 
 https://www.youtube.com/watch?v=Q7AOvWpIVHU
