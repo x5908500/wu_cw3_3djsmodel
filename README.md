@@ -61,3 +61,9 @@ example:
 
 init();
 loadGLTF5();
+
+
+recomand add model in .glb format so it combine with the texture together 
+
+simple page so css inside the index.html 
+
