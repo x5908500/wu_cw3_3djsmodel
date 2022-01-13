@@ -67,3 +67,11 @@ recomand add model in .glb format so it combine with the texture together
 
 simple page so css inside the index.html 
 
+
+To Run it  
+
+open floder with vscode then install
+
+vscode live server extention if you don‘t have one 
+
+and then right click index.html choose open with live server or visit http://127.0.0.1:5500/index.html
