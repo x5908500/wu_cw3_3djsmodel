@@ -10,16 +10,11 @@ https://github.com/masonprotsman/Blender_Threejs_tutorial
 
 Simply repalace it ('./model/E.glb' )meanwhile put new one in model folder, can also change the position variables after x y z 
 
-write before it 
-
-let Mesh5;
-
-and copy the whole function
 
 function loadGLTF() {
     let balloonLoader = new THREE.GLTFLoader();
 
-    balloonLoader.load('./model/E.glb', (glb) => {
+      balloonLoader.load('./model/E.glb', (glb) => {
         Mesh = glb.scene;
         Mesh.scale.set(0.5,0.5,0.5);
         scene.add(Mesh);
@@ -32,11 +27,16 @@ function loadGLTF() {
 }
 
 
-To add models for example add the 5th model in this project
+To add new models 
+for example add the 5th model in this project
 
-write definition before the function then copy whole function rename it to loadGLTF5 or whatever you want 
 
+
+write definition before the function
 let Mesh5;
+
+ then copy whole function rename it to loadGLTF5 or whatever you want 
+
 
 function loadGLTF5() {
     let balloonLoader = new THREE.GLTFLoader();
