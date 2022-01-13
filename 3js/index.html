@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <!-- Three.js library -->
+  <script src="https://threejs.org/build/three.min.js"></script>
+  <!-- GLTFLoader.js source -->
+  <script src="https://cdn.rawgit.com/mrdoob/three.js/master/examples/js/loaders/GLTFLoader.js"></script>
+
+  <!-- Jquerry -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+
+
+  <script type="module" src="./app.js"></script>
+    <title>Space</title>
+    <style>
+
+@import url("https://use.typekit.net/jmk3xov.css");
+        body { margin: 0; }
+        canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+:root {
+  --dark-bg: rgba(15, 15, 15, 0.95);
+  --spacing: 350px;
+
+  font-family: brandon-grotesque, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+main {
+  width: 100vw;
+  color: white;
+  z-index: 99;
+  position: absolute;
+  width: 100%;
+  margin: 0px auto;
+  padding: 120px 0px;
+
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+}
+
+h1, h2, h3, blockquote {
+  font-family: elevon, sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+canvas {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+  header {
+    background: var(--dark-bg);
+    grid-column: 2 / span 5;
+    font-size: 2.5rem;
+    padding: 2rem;
+    margin-bottom: var(--spacing);
+  }
+
+  section {
+    grid-column: 2 / 8;
+    padding: 1rem;
+    background: var(--dark-bg);
+    font-size: 1.25rem;
+    line-height: 1.5;
+    margin-bottom: var(--spacing);
+    height: auto;
+  }
+
+  blockquote {
+    margin: 0;
+    padding: 0;
+    grid-column: 2 / span 9;
+    margin-bottom: var(--spacing);
+  }
+
+  blockquote p {
+    color: black;
+    background-color: white;
+    font-size: 4rem;
+    display: inline;
+    line-height: 1;
+  }
+
+table{
+  width:100%;
+  text-align: left;
+  border-collapse: collapse;
+}
+tr {
+  border-bottom: 1px solid white;
+  height: 40px;
+}
+
+tr:hover {background-color: #6D6D6D;}
+
+* {box-sizing: border-box}
+.mySlides1, .mySlides2 .mySlides3 .mySlides4{display: none}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a grey background color */
+.prev:hover, .next:hover {
+  background-color: #f1f1f1;
+  color: black;
+}
+
+
+  .left {
+    grid-column: 6 / 12;
+  }
+  .right {
+    grid-column: 7 / 12;
+    position: fixed;
+    margin:auto;
+    opacity:0.8;
+  }
+    </style>
+    <script>
+    // horizontal scroll
+    </script>
+</head>
+<body>
+
+
+    <canvas id="bg"></canvas>
+    <main>
+      <header>
+        <h2>WOODY WU</h2>
+        <p>🚀 Crouse work 3</p>
+      </header>
+
+      <blockquote>
+        <p>Space explore</p>
+      </blockquote>
+
+      <!-- Dragon spacecraft -->
+      <section>
+        <h2>The Dragon spacecraft</h2>
+
+        <!-- Table -->
+        <table>
+          <tr>
+            <th>HEIGHT</th>
+            <th> 8.1 m / 26.7 ft</th>
+          </tr>
+          <tr>
+            <th>DIAMETER</th>
+            <th>4 m / 13 ft</th>
+          </tr>
+          <tr>
+            <th>CAPSULE VOLUME</th>
+            <th>9.3 m³ / 328 ft³</th>
+          </tr>
+          <tr>
+            <th>TRUNK VOLUME</th>
+            <th>37 m³ / 1300 ft³</th>
+          </tr>
+          <tr>
+            <th>LAUNCH PAYLOAD MASS</th>
+            <th>6,000 kg / 13,228 lbs</th>
+          </tr>
+          <tr>
+            <th>RETURN PAYLOAD MASS</th>
+            <th>3,000 kg / 6,614 lbs</th>
+          </tr>
+        </table>
+
+        <!-- Overview -->
+        <br>
+        <p>
+          The SpaceX Dragon, also known as Dragon 1 or Cargo Dragon, was a class of partially reusable cargo spacecraft developed by SpaceX, an American private space transportation company. Dragon was launched into orbit by the company's Falcon 9 launch vehicle to resupply the International Space Station (ISS).
+          <br><br>
+          The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.
+          The Dragon spacecraft is equipped with 16 Draco thrusters used to orient the spacecraft during the mission, including apogee/perigee maneuvers, orbit adjustment and attitude control. Each Draco thruster is capable of generating 90 pounds of force in the vacuum of space.
+        </p>
+
+        <!-- Image -->
+        <h2>Image gallery</h2>
+        <div class="slideshow-container">
+          <div class="mySlides1">
+            <img src="https://www.teslarati.com/wp-content/uploads/2019/09/Crew-Dragon-DM-1-orbit-tall-pano-SpaceX-crop-3.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="https://cdn.vox-cdn.com/thumbor/hin1OBS-Lgrt_bld7QOxozSXSnk=/0x0:3840x2160/1200x800/filters:focal(1613x773:2227x1387)/cdn.vox-cdn.com/uploads/chorus_image/image/69053543/Exu93_nU8AAMAiC.0.jpg" style="width:100%">
+          </div>
+
+          <div class="mySlides1">
+            <img src="https://cdn.cnn.com/cnnnext/dam/assets/190302144345-06-crew-dragon-spacex.jpg" style="width:100%">
+          </div>
+          <a class="prev" onclick="plusSlides(-1, 0)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1, 0)">&#10095;</a>
+        </div>
+
+        <script>
+          var slideIndex = [1,1];
+          var slideId = ["mySlides1", "mySlides2","mySlides3","mySlides4"]
+          showSlides(1, 0);
+          showSlides(1, 1);
+
+          function plusSlides(n, no) {
+            showSlides(slideIndex[no] += n, no);
+          }
+          function showSlides(n, no) {
+            var i;
+            var x = document.getElementsByClassName(slideId[no]);
+            if (n > x.length) {slideIndex[no] = 1}
+            if (n < 1) {slideIndex[no] = x.length}
+            for (i = 0; i < x.length; i++) {
+               x[i].style.display = "none";
+            }
+            x[slideIndex[no]-1].style.display = "block";
+          }
+          </script>
+
+      </section>
+      <section class="light">
+        <h2>ENABLE CODE TEST</h2>
+        <p>
+          The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.
+          The Dragon spacecraft is equipped with 16 Draco thrusters used to orient the spacecraft during the mission, including apogee/perigee maneuvers, orbit adjustment and attitude control. Each Draco thruster is capable of generating 90 pounds of force in the vacuum of space.
+          <div class="flourish-embed flourish-bar-chart-race" data-src="visualisation/7664605" data-width="70%"><script src="https://public.flourish.studio/resources/embed.js"></script></div>
+          <!-- <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FwLgMZQpR2qMdFGb4G7BL65%2Fsst-self-service%3Fnode-id%3D0%253A1" allowfullscreen></iframe> -->
+        </p>
+
+        <h2>Title0</h2>
+
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+
+      </section>
+
+      <blockquote>
+        <p>The best way out is always through <br>-Robert Frost</p>
+      </blockquote>
+
+      <section class="left">
+        <h2>subTitle1</h2>
+
+        <h3> </h3>
+        <p>
+          The Dragon spacecraft is capable of carrying up to 7 passengers to and from Earth orbit, and beyond. It is the only spacecraft currently flying that is capable of returning significant amounts of cargo to Earth, and is the first private spacecraft to take humans to the space station.
+
+The Dragon spacecraft is equipped with 16 Draco thrusters used to orient the spacecraft during the mission, including apogee/perigee maneuvers, orbit adjustment and attitude control. Each Draco thruster is capable of generating 90 pounds of force in the vacuum of space.
+
+HEIGHT            8.1 m / 26.7 ft
+DIAMETER       4 m / 13 ft
+CAPSULE VOLUME      9.3 m³ / 328 ft³
+TRUNK VOLUME         37 m³ / 1300 ft³
+LAUNCH PAYLOAD MASS       6,000 kg / 13,228 lbs
+RETURN PAYLOAD MASS       3,000 kg / 6,614 lbs
+
+        </p>
+        <h3>subTitle2</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+        <h3>subTitle3</h3>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        </p>
+      </section>
+
+
+
+      </section>  -->
+
+      <blockquote>
+        <p>Title4</p>
+      </blockquote>
+
+      <blockquote>
+        <p>Title5 </p>
+      </blockquote>
+      <section class="left">
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </section>
+    <blockquote>
+      <p>Thanks </p>
+    </blockquote>
+
+
+      <!-- <img class="right"src="window.png"></img> -->
+
+
+</body>
+</html>
