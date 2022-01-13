@@ -1,4 +1,5 @@
 # 3js_model contribute by Woody Wu
+
 Make the threejs-scroll-animation-demo model changeable
 reference from 
 https://www.youtube.com/watch?v=Q7AOvWpIVHU
@@ -67,6 +68,7 @@ recomand add model in .glb format so it combine with the texture together
 
 simple page so css inside the index.html 
 
+live example http://upbqb.com/3js/
 
 To Run it  
 
