@@ -52,8 +52,12 @@ function loadGLTF5() {
     });  
     
 }
+    
+
 
 and put loadGLTF5(); after init() at buttom to load the function
+
+example:
 
 init();
 loadGLTF5();
